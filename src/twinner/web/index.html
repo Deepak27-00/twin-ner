@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin-NER Demo</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa;
+    --panel: #ffffff;
+    --ink: #1d1c1a;
+    --muted: #6d6a65;
+    --line: #e4e2dd;
+    --accent: #2f6f5e;
+    --sensor: #b45309;
+    --sensor-bg: #fdf1e0;
+    --twin: #2563a8;
+    --twin-bg: #e6eff9;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a;
+      --panel: #1e2124;
+      --ink: #e9e7e3;
+      --muted: #9b9891;
+      --line: #32363a;
+      --accent: #6bbfa6;
+      --sensor: #e5a663;
+      --sensor-bg: #3a2c19;
+      --twin: #83b4e8;
+      --twin-bg: #1b2c40;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.6 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 1.75rem; }
+  h1 { margin: 0 0 .35rem; font-size: 1.5rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; font-size: .92rem; }
+  .status {
+    display: inline-flex; align-items: center; gap: .45rem;
+    margin-top: .8rem; font-size: .8rem; color: var(--muted);
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+  .dot.ready { background: var(--accent); }
+  .dot.error { background: #c0392b; }
+
+  form { display: flex; gap: .6rem; margin-bottom: .9rem; }
+  input[type=text] {
+    flex: 1; padding: .7rem .85rem; font: inherit; color: var(--ink);
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); outline: none;
+  }
+  input[type=text]:focus { border-color: var(--accent); }
+  button {
+    padding: .7rem 1.15rem; font: inherit; font-weight: 550; cursor: pointer;
+    color: #fff; background: var(--accent); border: 0; border-radius: var(--radius);
+  }
+  button:disabled { opacity: .55; cursor: not-allowed; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.6rem; }
+  .chip {
+    font-size: .78rem; padding: .3rem .6rem; cursor: pointer; color: var(--muted);
+    background: transparent; border: 1px solid var(--line); border-radius: 99px;
+  }
+  .chip:hover { color: var(--ink); border-color: var(--accent); }
+
+  .card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 1.15rem 1.25rem; margin-bottom: 1rem;
+  }
+  .label {
+    font-size: .7rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin-bottom: .55rem;
+  }
+  .sentence { font-size: 1.05rem; line-height: 2.1; }
+  mark {
+    padding: .15rem .3rem; border-radius: 5px; font-weight: 550;
+    background: var(--line); color: var(--ink);
+  }
+  mark.SENSOR { background: var(--sensor-bg); color: var(--sensor); }
+  mark.TWIN { background: var(--twin-bg); color: var(--twin); }
+  mark sup { font-size: .6rem; letter-spacing: .06em; opacity: .8; margin-left: .25rem; }
+
+  .intent-row { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
+  .intent { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 1rem; font-weight: 600; }
+  .conf { color: var(--muted); font-size: .85rem; }
+  .bar { height: 4px; background: var(--line); border-radius: 99px; margin-top: .6rem; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--accent); }
+
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th { text-align: left; font-weight: 550; color: var(--muted); font-size: .75rem;
+       text-transform: uppercase; letter-spacing: .06em; padding-bottom: .5rem; }
+  td { padding: .4rem 0; border-top: 1px solid var(--line); }
+  td.val { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .type-tag { font-size: .72rem; font-weight: 600; padding: .12rem .4rem; border-radius: 4px; }
+  .type-tag.SENSOR { background: var(--sensor-bg); color: var(--sensor); }
+  .type-tag.TWIN { background: var(--twin-bg); color: var(--twin); }
+
+  details { margin-top: .25rem; }
+  summary { cursor: pointer; color: var(--muted); font-size: .82rem; }
+  pre {
+    margin: .7rem 0 0; padding: .85rem; overflow-x: auto; font-size: .78rem;
+    background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
+  }
+  .meta { color: var(--muted); font-size: .78rem; margin-top: .9rem; }
+  .empty { color: var(--muted); font-style: italic; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .78rem; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Twin-NER</h1>
+    <p class="sub">Ask a digital-twin assistant something. It returns one intent and the entities it found, with character offsets.</p>
+    <div class="status"><span class="dot" id="dot"></span><span id="statusText">connecting…</span></div>
+  </header>
+
+  <form id="form">
+    <input type="text" id="query" placeholder="Show me motion sensors in Building003" autocomplete="off" autofocus>
+    <button type="submit" id="go">Analyse</button>
+  </form>
+
+  <div class="chips" id="chips"></div>
+
+  <div id="output"></div>
+
+  <footer>
+    REST API: <code>POST /predict</code> · <a href="/docs">OpenAPI docs</a> · <a href="/health">health</a>
+  </footer>
+</div>
+
+<script>
+const EXAMPLES = [
+  "Show me motion sensors in Building003",
+  "Fetch the latest temperature data from Cam004",
+  "Which humidity sensors are available in Zone-7?",
+  "What is the current air quality reading at Gateway012?",
+  "List all smoke sensors.",
+  "how many camera sensors does floor021 have"
+];
+
+const $ = (id) => document.getElementById(id);
+const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function setStatus(text, cls) {
+  $("statusText").textContent = text;
+  $("dot").className = "dot" + (cls ? " " + cls : "");
+}
+
+// Rebuild the sentence with <mark> around each span. Offsets come straight from
+// the model, so highlighting never has to re-guess where an entity sits.
+function highlight(text, entities) {
+  const sorted = [...entities].sort((a, b) => a.start - b.start);
+  let html = "", cursor = 0;
+  for (const e of sorted) {
+    if (e.start < cursor) continue;               // ignore overlaps defensively
+    html += escapeHtml(text.slice(cursor, e.start));
+    html += `<mark class="${escapeHtml(e.type)}">${escapeHtml(text.slice(e.start, e.end))}<sup>${escapeHtml(e.type)}</sup></mark>`;
+    cursor = e.end;
+  }
+  return html + escapeHtml(text.slice(cursor));
+}
+
+function render(data) {
+  const pct = (n) => (n * 100).toFixed(1) + "%";
+  const rows = data.entities.length
+    ? data.entities.map((e) => `
+        <tr>
+          <td><span class="type-tag ${escapeHtml(e.type)}">${escapeHtml(e.type)}</span></td>
+          <td class="val">${escapeHtml(e.value)}</td>
+          <td class="val">${e.start}–${e.end}</td>
+          <td>${pct(e.confidence)}</td>
+        </tr>`).join("")
+    : `<tr><td colspan="4" class="empty">No entities found in this utterance.</td></tr>`;
+
+  $("output").innerHTML = `
+    <div class="card">
+      <div class="label">Utterance</div>
+      <div class="sentence">${highlight(data.text, data.entities)}</div>
+    </div>
+    <div class="card">
+      <div class="label">Intent</div>
+      <div class="intent-row">
+        <span class="intent">${escapeHtml(data.intent.label)}</span>
+        <span class="conf">${pct(data.intent.confidence)} confident</span>
+      </div>
+      <div class="bar"><i style="width:${(data.intent.confidence * 100).toFixed(1)}%"></i></div>
+    </div>
+    <div class="card">
+      <div class="label">Entities</div>
+      <table>
+        <thead><tr><th>Type</th><th>Value</th><th>Offsets</th><th>Confidence</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div class="meta">Inference took ${data.latency_ms} ms.</div>
+      <details>
+        <summary>Raw JSON response</summary>
+        <pre>${escapeHtml(JSON.stringify(data, null, 2))}</pre>
+      </details>
+    </div>`;
+}
+
+async function analyse(text) {
+  if (!text.trim()) return;
+  $("go").disabled = true;
+  try {
+    const response = await fetch("/predict", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text })
+    });
+    if (!response.ok) {
+      const detail = await response.json().catch(() => ({}));
+      throw new Error(detail.detail || `Request failed (${response.status})`);
+    }
+    render(await response.json());
+  } catch (error) {
+    $("output").innerHTML = `<div class="card"><div class="label">Error</div>${escapeHtml(error.message)}</div>`;
+  } finally {
+    $("go").disabled = false;
+  }
+}
+
+EXAMPLES.forEach((example) => {
+  const chip = document.createElement("button");
+  chip.type = "button";
+  chip.className = "chip";
+  chip.textContent = example;
+  chip.onclick = () => { $("query").value = example; analyse(example); };
+  $("chips").appendChild(chip);
+});
+
+$("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  analyse($("query").value);
+});
+
+fetch("/health")
+  .then((r) => r.json())
+  .then((h) => {
+    if (h.status === "ok") {
+      setStatus(`model ready · ${h.device} · trained ${h.trained_at || "unknown"}`, "ready");
+    } else {
+      setStatus("model loading…");
+    }
+  })
+  .catch(() => setStatus("API unreachable", "error"));
+</script>
+</body>
+</html>

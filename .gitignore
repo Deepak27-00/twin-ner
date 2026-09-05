@@ -1,0 +1,49 @@
+# Model checkpoints and training outputs (regenerate with `twinner train`)
+artifacts/
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Derived data splits (regenerate with `twinner prepare`)
+data/processed/
+
+# Generated corpora (reproduce byte-for-byte with `twinner synth`)
+data/raw/sensor_queries_large.csv
+data/raw/ci.csv
+data/raw/dev.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+.python-version
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives and scratch
+*.zip
+*.tar.gz
+*.log
+scratch/

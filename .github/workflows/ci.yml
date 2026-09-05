@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      # The CPU wheel keeps the CI download at a few hundred MB instead of the
+      # multi-gigabyte CUDA build, which this project has no use for.
+      - name: Install PyTorch (CPU wheel)
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install project
+        run: pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check src tests
+
+      - name: Format check
+        run: ruff format --check src tests
+
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ runner.os }}-bert-base-uncased
+
+      - name: Test
+        run: pytest --cov=twinner --cov-report=term-missing
+
+  smoke:
+    # Proves the pipeline actually trains, not just that the units pass.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install PyTorch (CPU wheel)
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install project
+        run: pip install -e ".[dev]"
+
+      - name: Train one epoch on a small synthetic set
+        run: |
+          twinner synth --size 400 --out data/raw/ci.csv
+          twinner train --data data/raw/ci.csv --epochs 1
+
+      - name: Predict with the trained checkpoint
+        run: twinner predict --json "Fetch the latest motion data from Cam004"
+
+      - name: Exercise the API against the trained checkpoint
+        run: pytest tests/test_api.py -q

@@ -1,0 +1,251 @@
+text,intent,entities
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+List all temperature sensors in Building002.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building002
+List all humidity sensors in Building002.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building002
+List all motion sensors in Building002.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building002
+List all camera sensors in Building002.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building002
+List all temperature sensors in Building003.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building003
+List all humidity sensors in Building003.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building003
+List all motion sensors in Building003.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building003
+List all camera sensors in Building003.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building003
+List all temperature sensors in Building004.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building004
+List all humidity sensors in Building004.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building004
+List all motion sensors in Building004.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building004
+List all camera sensors in Building004.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building004
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+List all temperature sensors in Building002.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building002
+List all humidity sensors in Building002.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building002
+List all motion sensors in Building002.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building002
+List all camera sensors in Building002.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building002
+List all temperature sensors in Building003.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building003
+List all humidity sensors in Building003.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building003
+List all motion sensors in Building003.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building003
+List all camera sensors in Building003.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building003
+List all temperature sensors in Building004.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building004
+List all humidity sensors in Building004.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building004
+List all motion sensors in Building004.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building004
+List all camera sensors in Building004.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building004
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+List all temperature sensors in Building002.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building002
+List all humidity sensors in Building002.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building002
+List all motion sensors in Building002.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building002
+List all camera sensors in Building002.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building002
+List all temperature sensors in Building003.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building003
+List all humidity sensors in Building003.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building003
+List all motion sensors in Building003.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building003
+List all camera sensors in Building003.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building003
+List all temperature sensors in Building004.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building004
+List all humidity sensors in Building004.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building004
+List all motion sensors in Building004.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building004
+List all camera sensors in Building004.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building004
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+List all temperature sensors in Building002.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building002
+List all humidity sensors in Building002.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building002
+List all motion sensors in Building002.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building002
+List all camera sensors in Building002.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building002
+List all temperature sensors in Building003.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building003
+List all humidity sensors in Building003.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building003
+List all motion sensors in Building003.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building003
+List all camera sensors in Building003.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building003
+List all temperature sensors in Building004.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building004
+List all humidity sensors in Building004.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building004
+List all motion sensors in Building004.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building004
+List all camera sensors in Building004.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building004
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+List all temperature sensors in Building002.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building002
+List all humidity sensors in Building002.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building002
+List all motion sensors in Building002.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building002
+List all camera sensors in Building002.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building002
+List all temperature sensors in Building003.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building003
+List all humidity sensors in Building003.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building003
+List all motion sensors in Building003.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building003
+List all camera sensors in Building003.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building003
+List all temperature sensors in Building004.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building004
+List all humidity sensors in Building004.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building004
+List all motion sensors in Building004.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building004
+List all camera sensors in Building004.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building004
+List all temperature sensors in Building001.,LIST_SENSORS,sensorType: temperature; digitalTwinID:Building001
+List all humidity sensors in Building001.,LIST_SENSORS,sensorType: humidity; digitalTwinID:Building001
+List all motion sensors in Building001.,LIST_SENSORS,sensorType: motion; digitalTwinID:Building001
+List all camera sensors in Building001.,LIST_SENSORS,sensorType: camera; digitalTwinID:Building001
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Fetch the latest temperature data from Cam002.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam002
+Fetch the latest humidity data from Cam002.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam002
+Fetch the latest motion data from Cam002.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam002
+Fetch the latest camera data from Cam002.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam002
+Fetch the latest temperature data from Cam003.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam003
+Fetch the latest humidity data from Cam003.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam003
+Fetch the latest motion data from Cam003.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam003
+Fetch the latest camera data from Cam003.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam003
+Fetch the latest temperature data from Cam004.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam004
+Fetch the latest humidity data from Cam004.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam004
+Fetch the latest motion data from Cam004.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam004
+Fetch the latest camera data from Cam004.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam004
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Fetch the latest temperature data from Cam002.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam002
+Fetch the latest humidity data from Cam002.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam002
+Fetch the latest motion data from Cam002.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam002
+Fetch the latest camera data from Cam002.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam002
+Fetch the latest temperature data from Cam003.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam003
+Fetch the latest humidity data from Cam003.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam003
+Fetch the latest motion data from Cam003.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam003
+Fetch the latest camera data from Cam003.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam003
+Fetch the latest temperature data from Cam004.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam004
+Fetch the latest humidity data from Cam004.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam004
+Fetch the latest motion data from Cam004.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam004
+Fetch the latest camera data from Cam004.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam004
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Fetch the latest temperature data from Cam002.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam002
+Fetch the latest humidity data from Cam002.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam002
+Fetch the latest motion data from Cam002.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam002
+Fetch the latest camera data from Cam002.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam002
+Fetch the latest temperature data from Cam003.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam003
+Fetch the latest humidity data from Cam003.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam003
+Fetch the latest motion data from Cam003.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam003
+Fetch the latest camera data from Cam003.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam003
+Fetch the latest temperature data from Cam004.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam004
+Fetch the latest humidity data from Cam004.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam004
+Fetch the latest motion data from Cam004.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam004
+Fetch the latest camera data from Cam004.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam004
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Fetch the latest temperature data from Cam002.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam002
+Fetch the latest humidity data from Cam002.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam002
+Fetch the latest motion data from Cam002.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam002
+Fetch the latest camera data from Cam002.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam002
+Fetch the latest temperature data from Cam003.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam003
+Fetch the latest humidity data from Cam003.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam003
+Fetch the latest motion data from Cam003.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam003
+Fetch the latest camera data from Cam003.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam003
+Fetch the latest temperature data from Cam004.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam004
+Fetch the latest humidity data from Cam004.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam004
+Fetch the latest motion data from Cam004.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam004
+Fetch the latest camera data from Cam004.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam004
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Fetch the latest temperature data from Cam002.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam002
+Fetch the latest humidity data from Cam002.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam002
+Fetch the latest motion data from Cam002.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam002
+Fetch the latest camera data from Cam002.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam002
+Fetch the latest temperature data from Cam003.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam003
+Fetch the latest humidity data from Cam003.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam003
+Fetch the latest motion data from Cam003.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam003
+Fetch the latest camera data from Cam003.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam003
+Fetch the latest temperature data from Cam004.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam004
+Fetch the latest humidity data from Cam004.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam004
+Fetch the latest motion data from Cam004.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam004
+Fetch the latest camera data from Cam004.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam004
+Fetch the latest temperature data from Cam001.,GET_LATEST_DATA,sensorType: temperature; digitalTwinID:Cam001
+Fetch the latest humidity data from Cam001.,GET_LATEST_DATA,sensorType: humidity; digitalTwinID:Cam001
+Fetch the latest motion data from Cam001.,GET_LATEST_DATA,sensorType: motion; digitalTwinID:Cam001
+Fetch the latest camera data from Cam001.,GET_LATEST_DATA,sensorType: camera; digitalTwinID:Cam001
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001
+Retrieve all motion sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building001
+Retrieve all camera sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building001
+Retrieve all temperature sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building002
+Retrieve all humidity sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building002
+Retrieve all motion sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building002
+Retrieve all camera sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building002
+Retrieve all temperature sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building003
+Retrieve all humidity sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building003
+Retrieve all motion sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building003
+Retrieve all camera sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building003
+Retrieve all temperature sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building004
+Retrieve all humidity sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building004
+Retrieve all motion sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building004
+Retrieve all camera sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building004
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001
+Retrieve all motion sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building001
+Retrieve all camera sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building001
+Retrieve all temperature sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building002
+Retrieve all humidity sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building002
+Retrieve all motion sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building002
+Retrieve all camera sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building002
+Retrieve all temperature sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building003
+Retrieve all humidity sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building003
+Retrieve all motion sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building003
+Retrieve all camera sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building003
+Retrieve all temperature sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building004
+Retrieve all humidity sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building004
+Retrieve all motion sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building004
+Retrieve all camera sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building004
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001
+Retrieve all motion sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building001
+Retrieve all camera sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building001
+Retrieve all temperature sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building002
+Retrieve all humidity sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building002
+Retrieve all motion sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building002
+Retrieve all camera sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building002
+Retrieve all temperature sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building003
+Retrieve all humidity sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building003
+Retrieve all motion sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building003
+Retrieve all camera sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building003
+Retrieve all temperature sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building004
+Retrieve all humidity sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building004
+Retrieve all motion sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building004
+Retrieve all camera sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building004
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001
+Retrieve all motion sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building001
+Retrieve all camera sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building001
+Retrieve all temperature sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building002
+Retrieve all humidity sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building002
+Retrieve all motion sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building002
+Retrieve all camera sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building002
+Retrieve all temperature sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building003
+Retrieve all humidity sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building003
+Retrieve all motion sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building003
+Retrieve all camera sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building003
+Retrieve all temperature sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building004
+Retrieve all humidity sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building004
+Retrieve all motion sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building004
+Retrieve all camera sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building004
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001
+Retrieve all motion sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building001
+Retrieve all camera sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building001
+Retrieve all temperature sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building002
+Retrieve all humidity sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building002
+Retrieve all motion sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building002
+Retrieve all camera sensors from Building002.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building002
+Retrieve all temperature sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building003
+Retrieve all humidity sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building003
+Retrieve all motion sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building003
+Retrieve all camera sensors from Building003.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building003
+Retrieve all temperature sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building004
+Retrieve all humidity sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building004
+Retrieve all motion sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: motion; digitalTwinID:Building004
+Retrieve all camera sensors from Building004.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: camera; digitalTwinID:Building004
+Retrieve all temperature sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: temperature; digitalTwinID:Building001
+Retrieve all humidity sensors from Building001.,GET_AVAILABLE_SENSORS_BY_TYPE,sensorType: humidity; digitalTwinID:Building001

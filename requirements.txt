@@ -1,0 +1,15 @@
+# Runtime dependencies. Installing the package (`pip install -e .`) pulls these
+# in automatically; this file exists for plain `pip install -r` workflows.
+#
+# CPU-only PyTorch is a much smaller download and is plenty for this model:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+transformers>=4.30
+pandas>=1.5
+scikit-learn>=1.2
+numpy>=1.23
+pyyaml>=6.0
+tqdm>=4.65
+fastapi>=0.104
+uvicorn[standard]>=0.24
+pydantic>=2.0
